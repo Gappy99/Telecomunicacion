@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo general */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    padding: 40px 20px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de contactos */
+.contactos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjeta de contacto */
+.contacto {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Nombre */
+.contacto h2 {
+    font-size: 18px;
+    color: #4e73df;
+    margin-bottom: 8px;
+}
+
+/* Teléfono */
+.contacto p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Foto de perfil */
+.foto-perfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #4e73df;
+}
+
+/* Contenedor del botón */
+.acciones {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Botón */
+.btn {
+    background-color: #1cc88a;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #17a673;
+}
