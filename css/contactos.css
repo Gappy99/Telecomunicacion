@@ -45,13 +45,13 @@ h1 {
     margin-bottom: 8px;
 }
 
-/* Teléfono */
+/* Telefono */
 .contacto p {
     font-size: 14px;
     color: #555;
 }
 
-/* Foto de perfil */
+/* foto */
 .foto-perfil {
     width: 80px;
     height: 80px;
@@ -61,13 +61,13 @@ h1 {
     border: 3px solid #4e73df;
 }
 
-/* Contenedor del botón */
+/* Contenedor */
 .acciones {
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* Botón */
+/* Boton */
 .btn {
     background-color: #1cc88a;
     color: white;
