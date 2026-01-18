@@ -1,0 +1,84 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo */
+body {
+    min-height: 100vh;
+    background: #0b141a;
+    padding: 40px 20px;
+}
+
+/* Botón volver */
+.btn-volver {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #25d366;
+    color: #0b141a;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-volver:hover {
+    background-color: #1faa59;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #e9edef;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.contactos-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Tarjeta */
+.contacto {
+    background: #111b21;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Foto */
+.foto-perfil {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #25d366;
+    margin-bottom: 12px;
+}
+
+/* Nombre */
+.contacto h2 {
+    color: #25d366;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Info */
+.contacto p {
+    color: #8696a0;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.contacto strong {
+    color: #e9edef;
+}
