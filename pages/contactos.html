@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,30 +8,49 @@
     <link rel="stylesheet" href="../css/contactos.css">
 </head>
 
+<script>
+    const nombre = localStorage.getItem("usuarioNombre");
+
+    if (!nombre) {
+        // si no hay sesion
+        window.location.href = "../index.html";
+    } else {
+        document.getElementById("nombreUsuario").textContent = nombre;
+    }
+</script>
+
+
 <body>
+
+    <div class="usuario-header">
+        <img src="../images/kinal.png" class="usuario-foto" id="fotoUsuario">
+        <span id="nombreUsuario"></span>
+        <a href="perfil.html" class="btn">Mi Perfil</a>
+    </div>
+
 
     <h1>Tus contactos</h1>
 
     <!-- secciones -->
     <div class="acciones">
         <a href="nuevoContacto.html" class="btn">Nuevo contacto</a>
-        <a href="detalleContacto.html"class="btn">Detalle Contacto</a>
+        <a href="detalleContacto.html" class="btn">Detalle Contacto</a>
         <a href="favoritos.html" class="btn">Favoritos</a>
     </div>
 
     <div class="contactos-container">
-            <div class="contacto">
-                <img src="../images/bb.jpg" class="foto-perfil">
-                <h2>Benito</h2>
-                <p>En Linea</p>
-            </div>
+        <div class="contacto">
+            <img src="../images/bb.jpg" class="foto-perfil">
+            <h2>Benito</h2>
+            <p>En Linea</p>
+        </div>
         </a>
 
-            <div class="contacto">
-                <img src="../images/rr.jpg" class="foto-perfil">
-                <h2>Raul</h2>
-                <p>Desconectado</p>
-            </div>
+        <div class="contacto">
+            <img src="../images/rr.jpg" class="foto-perfil">
+            <h2>Raul</h2>
+            <p>Desconectado</p>
+        </div>
         </a>
 
         <div class="contacto">

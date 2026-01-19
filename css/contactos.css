@@ -80,3 +80,34 @@ h1 {
 .btn:hover {
     background-color: #1faa59;
 }
+
+/* =======================
+   HEADER USUARIO
+======================= */
+.usuario-header {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    background: #111b21;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+/* Foto usuario */
+.usuario-foto {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #25d366;
+}
+
+/* Nombre usuario */
+#nombreUsuario {
+    color: #e9edef;
+    font-weight: bold;
+    font-size: 15px;
+}
