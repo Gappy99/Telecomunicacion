@@ -1,0 +1,172 @@
+/* ===================== */
+/* RESET GENERAL */
+/* ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===================== */
+/* FONDO DE LA PÁGINA */
+/* ===================== */
+body {
+    min-height: 100vh;
+    background-color: #e5ddd5; /* fondo claro tipo WhatsApp */
+    padding: 80px 20px;
+}
+
+/* ===================== */
+/* BOTÓN VOLVER */
+/* ===================== */
+.btn-volver {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #25d366;
+    color: #0b141a;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-volver:hover {
+    background-color: #1faa59;
+}
+/* ===================== */
+/* CONTENEDOR PRINCIPAL */
+/* ===================== */
+.tareas-container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================== */
+/* TÍTULO */
+/* ===================== */
+.tareas-container h1 {
+    text-align: center;
+    color: #075e54;
+    margin-bottom: 20px;
+}
+
+/* ===================== */
+/* FORMULARIO */
+/* ===================== */
+.form-tarea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-tarea input,
+.form-tarea select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-tarea input:focus,
+.form-tarea select:focus {
+    outline: none;
+    border-color: #25d366;
+}
+
+/* ===================== */
+/* BOTÓN AGREGAR */
+/* ===================== */
+.form-tarea button {
+    background-color: #25d366;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-tarea button:hover {
+    background-color: #1ebe5d;
+}
+
+/* ===================== */
+/* LISTA DE TAREAS */
+/* ===================== */
+.lista-tareas {
+    list-style: none;
+}
+
+/* ===================== */
+/* TAREA INDIVIDUAL */
+/* ===================== */
+.tarea {
+    background-color: #f0f2f5;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===================== */
+/* TEXTO DE TAREA */
+/* ===================== */
+.tarea span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* ===================== */
+/* PRIORIDADES */
+/* ===================== */
+.alta {
+    border-left: 6px solid #e53935;
+}
+
+.media {
+    border-left: 6px solid #fbc02d;
+}
+
+.baja {
+    border-left: 6px solid #43a047;
+}
+
+/* ===================== */
+/* BOTONES DE ACCIÓN */
+/* ===================== */
+.acciones button {
+    margin-left: 6px;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Editar */
+.btn-editar {
+    background-color: #ffd54f;
+}
+
+/* Eliminar */
+.btn-eliminar {
+    background-color: #ef5350;
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: #ffca28;
+}
+
+.btn-eliminar:hover {
+    background-color: #e53935;
+}
