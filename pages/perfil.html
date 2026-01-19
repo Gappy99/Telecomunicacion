@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="../css/perfil.css">
+</head>
+
+<body>
+
+    <a href="contactos.html" class="btn-volver">Volver</a>
+
+    <div class="perfil-container">
+        <img src="../images/kinal.png" class="perfil-foto">
+
+        <h1 id="perfilNombre"></h1>
+
+        <p id="perfilCorreo"></p>
+
+        <button class="btn-cerrar" onclick="cerrarSesion()">Cerrar sesion</button>
+    </div>
+
+    <script>
+        const nombre = localStorage.getItem("usuarioNombre");
+        const correo = localStorage.getItem("usuarioCorreo");
+
+        //hace una comparacion para verificar el inicio de sesion 
+        if (!nombre || !correo) {
+            window.location.href = "../index.html";
+        } else {
+            document.getElementById("perfilNombre").textContent = nombre;
+            document.getElementById("perfilCorreo").textContent = correo;
+        }
+
+        function cerrarSesion() {
+            localStorage.clear();
+            window.location.href = "../index.html";
+        }
+    </script>
+
+</body>
+</html>
